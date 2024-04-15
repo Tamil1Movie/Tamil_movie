@@ -1,0 +1,23 @@
+body{	
+	  background-color:DarkCyan;
+  	color:white;
+  	text-align:center;
+  	font-size:100%;
+}
+#Heading {
+  background-color: white;
+  color: black;
+  padding: 40px;
+  text-align:center;
+  font-size:100px;
+} 
+p{
+  font-size:150%;
+}
+div {
+  background-color:blue green;
+  width: 1060px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 60px;
+}
