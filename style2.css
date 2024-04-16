@@ -1,6 +1,7 @@
 body{	
-	background-color:DarkCyan;
   	color:white;
+  	background-image:url('bg.gif');
+	background-size:cover;
 }
 .box{
  width:500px;
