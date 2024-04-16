@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style2.css">
+</head>
+<centre>
+<body>
+<div class="box">
+<b><h1><b>LOGIN</h1>
+<form name="form1" action="#">
+<h2>Email</h2> 
+<input type='text' name='text1'/>
+<p class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></p>
+</form>
+<label for="codeBasePassword">Code Base Password:</label>
+<input type="text" id="codeBasePassword" name="codeBasePassword"><br><br>
+
+<label for="confirmPassword">Confirm Password:</label>
+<input type="text" id="confirmPassword" name="confirmPassword"><br><br>
+
+<input type="submit" value="Submit" onclick="checkPasswords()">
+</div>
+<script>
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
+</script>
+<script>
+function checkPasswords(inputText) {
+    const codeBasePassword = document.getElementById("codeBasePassword").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (codeBasePassword !== confirmPassword) {
+        alert("The passwords do not match. Please re-enter.");
+        return false;
+    }
+}
+</script>
+</div><b>
+</centre>
+</body>
+</html>
